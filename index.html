@@ -1,29 +1,31 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>ソフトテク株式会社 - 2019採用</title>
+		<title>ソフトテク株式会社 - ホームページ</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 
-		<!-- page specific plugin styles -->
 
 		<!-- text fonts -->
 		<link rel="stylesheet" href="assets/css/ace-fonts.min.css" />
 
 		<!-- ace styles -->
-		<link rel="stylesheet" href="assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
 		
-		<link rel="stylesheet" href="frontend.css" />
 		<style>
-		.coming-soon .jumbotron {
-			background-image: url(images/meteorshower2.jpg);
+		.jumbotron.has-background {
+			background: transparent url(images/home-bg.jpg) top center no-repeat;
+			/* background source: https://pixabay.com/en/apple-steve-jobs-quotes-scrabble-758334/ */
+		}
+		.section-contact {
+			background: #222 url(images/map-contact.jpg) center no-repeat;
 		}
 		</style>
 
@@ -34,6 +36,9 @@
 		<!--[if lte IE 9]>
 		  <link rel="stylesheet" href="../assets/css/ace-ie.css" />
 		<![endif]-->
+		
+		
+		<link rel="stylesheet" href="frontend.css" />
 
 
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
@@ -44,194 +49,460 @@
 		<![endif]-->
 	</head>
 
-	<body class="no-skin pos-rel coming-soon">
+	<body class="no-skin pos-rel" data-spy="scroll" data-target="#menu">
 		<div id="navbar" class="navbar navbar-default navbar-fixed-top">
 			<div class="navbar-container container" id="navbar-container">
+				
+				<button data-target="#menu" data-toggle="collapse" type="button" class="pull-right navbar-toggle collapsed">
+					<span class="sr-only">Toggle menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
 				<div class="navbar-header navbar-left">
-					<a href="#" class="navbar-brand">
+					<a href="#top" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
-							<span class="light-green">ソフトテク</span> 株式会社　<span class="orange2 bigger-110">    2019採用</span>
+							<span class="light-green">ソフトテク</span> 株式会社
 						</small>
 					</a>
+				</div>
+
+				<div class=" navbar-header navbar-right" role="navigation">
+					<div id="menu" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right" role="tablist">
+							<li>
+								<a href="#services">事業紹介</a>
+							</li>
+							
+							<li class="sep visible-md visible-lg">
+								<i class="ace-icon fa fa-circle white"></i>
+							</li>
+							
+							<li>
+								<a href="#info">企業情報</a>
+							</li>
+							
+							<li class="sep visible-md visible-lg">
+								<i class="ace-icon fa fa-circle white"></i>
+							</li>
+							
+							<li>
+								<a href="#slider">成功事例</a>
+							</li>
+							
+							<li class="sep visible-md visible-lg">
+								<i class="ace-icon fa fa-circle white"></i>
+							</li>
+							
+							<li>
+								<a href="#contact">問合せ</a>
+							</li>
+
+						</ul>
+					</div>				
 				</div>
 			</div><!-- /.navbar-container -->
 		</div>
 		
-		<div class="main-container">
-			<div class="jumbotron">
-			  <div class="container">
-					<div class="text-center">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-							</div>
-						</div>	
+		<div class="main-container" id="top">
+			<div class="jumbotron main-background">
+			
+			  <img src="images/home-bg.jpg" class="img-main-background" />
+			  
+			  <div class="container pos-rel">
+				<div class="text-center">
+					<h2 class="light-green">お客様のため、そしてご自身のために、一緒に働きませんか？</h2>
+					<h1 class="white">2019年度採用活動開催中-New</h1>
+					<h3 class="light-blue">中途でも　<span class="orange2 bigger-110">未経験者でも大歓迎！</span>　</h3>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<a class="btn btn-purple btn-lg no-border bigger-150" href="2019.html" target="_blank" role="button">&nbsp; 詳細へ &nbsp;</a>
+				</div>
+			  </div>
+			</div>
+			
+			
+			<section id="services" class="section section-grey">
+				<div class="container">
+					<div class="row">
+						<div class="text-center">
+							<h2 class="text-primary">事業紹介</h2>
+							<h3 class="text-muted">私たちがご提供するシステム＆ソフトウェア開発には、先人の知識・智恵が凝縮されております。</h3>
+						</div>
+					</div>
+					<div class="space-4"></div>
+					<div class="row text-center">
+						<div class="col-md-4">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x text-primary"></i>
+								<i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+							</span>
+							<h4 class="text-info">受託開発・特定技術派遣</h4>
+							<p class="text-muted align-justify">私たちは、ソフトウェア・エンジニアを派遣し、お客様がアプリケーションや、システム、ネットワークを構築するためのあらゆる工程をサポートいたします。これまで培ってきたノウハウによって、医療、金融、通信、流通業界のお客様にサービスをご提供してきました。</p>
+						</div>
+						
+						<div class="col-md-4">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x text-primary"></i>
+								<i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+							</span>
+							<h4 class="text-info">自社サービス</h4>
+							<p class="text-muted align-justify">これまでの経験で積み重ねられた開発力と、実績に裏付けられた確かな人財が生み出すアイデアを余すところなく注ぎこみ、自社独自のサービスを開発しております。</p>
+						</div>
+						
+						<div class="col-md-4">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x text-primary"></i>
+								<i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+							</span>
+							<h4 class="text-info">ITコンサルタント</h4>
+							<p class="text-muted align-justify">顧客のビジネスや業務を理解する上で、より顧客のビジネス目標の達成に重点を置いて、経営課題解決に向けた現状分析～改善案、顧客ニーズに合ったシステムや技術を提案する。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section id="info" class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-sm-6 col-lg-offset-1 text-center">
+							<img alt="Section Image" src="images/app.jpg" width="300" class="img-responsive" />
+						</div>
+						
+						<div class="col-lg-5 col-sm-6">
+							<h2 class="text-primary"><i class="ace-icon fa fa-feed orange"></i>&nbsp; 企業情報 </h2>	
+							<div class="hr"></div>
+							<p>
+								ソフトテク株式会社の財産は、人であり、成長追求の姿勢です。<br/>
+お客様も、私たちスタッフも、全員がこの社会で最大限に活きるために、
+エンジニアをもとより、経営も営業も一丸となり、日々理念を胸に向上を目指しています。
+							</p>
+						</div>						
 					</div>
 
-					<div class="col-md-10 col-md-offset-1">
-						<div class="row white">
-							<table class="table  table-bordered">
-								<tbody>
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">雇用形態</span>
-											</label>
-										</td>
-
-										<td>
-											正社員／契約社員
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">仕事内容</span>
-											</label>
-										</td>
-
-										<td>
-											大手企業のプロジェクトに参加、様々なシステム開発に携わっていただきます。上流工程を目指して成長するチャンスが豊富にあります。
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">応募資格</span>
-											</label>
-										</td>
-
-										<td>
-											学歴不問。未経験可。22～45歳位まで。
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">勤務地</span>
-											</label>
-										</td>
-
-										<td>
-											首都圏近郊（東京・神奈川・千葉・埼玉）
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">勤務時間</span>
-											</label>
-										</td>
-
-										<td>
-											9:00-18:00（本社）※本社以外では各派遣先の規定に準じます。
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">給与</span>
-											</label>
-										</td>
-
-										<td>
-												25～70万円／月。 経験・能力を考慮に入れ優遇します。
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">待遇・福利</span>
-											</label>
-										</td>
-
-										<td>
-											各種保険完備。 昇給年一回。
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">休日・休暇</span>
-											</label>
-										</td>
-
-										<td>
-											土日、祝祭日、年末年始、夏期休暇、有給休暇、その他特別休暇（本社）
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">優遇対象資格</span>
-											</label>
-										</td>
-
-										<td>
-											情報処理技術者：基本情報技術者<br/>
-											※旧第ニ種情報処理／MCP（マイクロソフト認定プロフェッショナル）／シスコ技術者認定<br/>
-											オラクルマスタ（Silver・Gold・Platinum）／オラクルマスター（Developer）／Sun Solaris Certification（SCSA・SCNA）
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">優遇対象スキル</span>
-											</label>
-										</td>
-
-										<td>
-											データベース構築技術（Oracle・DB2・SQLServer・MYSQL・PostgreSQL）<br/>
-											Windows／Solaris／UNIX／Linux<br/>
-											HTML／XML／Java（JSP・Servlet・EJB・Struts）VB／C／VC++／.NET など
-										</td>
-									</tr>
-
-									<tr>
-										<td class="center">
-											<label class="pos-rel">
-												<span class="lbl">応募方法</span>
-											</label>
-										</td>
-
-										<td>
-											履歴書を<span class="red"> ghg@it-softtech.com </span>へご送信ください。
-											電話：03-5809-3784
-										</td>
-									</tr>
-								</tbody>
-								</table>
-							</div>
-						</div>
-			  </div>
-
-			  <div class="text-center social-tools">
-					<span class="action-buttons">
-						<a href="#">
-							<i class="ace-icon fa fa-twitter-square light-blue fa-3x"></i>
-						</a>
-						
-						<a href="#">
-							<i class="ace-icon fa fa-facebook-square text-primary fa-3x"></i>
-						</a>
-						
-						<a href="#">
-							<i class="ace-icon fa fa-rss-square orange fa-3x"></i>
-						</a>
-					</span>
 				</div>
-			</div>
-
+			</section>
 			
+			<section class="section section-grey">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-5 col-sm-6 col-lg-offset-1">
+							<h2 class="text-primary"><i class="ace-icon fa fa-newspaper-o green"></i>&nbsp; 会社概要</h2>	
+							<div class="hr"></div>
+							<p>
+								<table class="table  table-bordered">
+									<tbody>
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">会社名</span>
+												</label>
+											</td>
+
+											<td>
+												ソフトテク株式会社
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">設立日</span>
+												</label>
+											</td>
+
+											<td>
+												2015年12月10日
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">資本金</span>
+												</label>
+											</td>
+
+											<td>
+												1000万
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">代表取締役</span>
+												</label>
+											</td>
+
+											<td>
+												佐藤　光一
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">住所</span>
+												</label>
+											</td>
+
+											<td>
+												〒101-0031　東京都千代田区東神田1-5-2 黒崎ビル5階
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">連絡電話</span>
+												</label>
+											</td>
+
+											<td>
+												03-5809-3784
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</p>
+						</div>
+						<div class="col-lg-5 col-lg-offset-1 col-sm-6 text-center">
+							<img alt="Section Image" width="400" src="images/company_info.jpg" class="img-responsive inline" />
+						</div>
+					</div>
+
+				</div>
+			</section>
+			
+			
+			<section id="slider" class="section no-padding">
+				<div id="carousel-example" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example" data-slide-to="1"></li>
+					<li data-target="#carousel-example" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+					<div class="item active">
+					  <img data-src="holder.js/100px400?theme=industrial&text=情報システム" alt="情報システム" />
+					  <div class="carousel-caption">
+						<h3>証券会社様の社内に構築された100システムのうち、３つの現行システムの運用を維持し、お客様要望を基に仕様検討、設計、開発を行いました。</h3>
+					  </div>
+					</div>
+					<div class="item">
+					  <img data-src="holder.js/100px400?theme=industrial&text=生産管理システム" alt="生産管理システム" />
+					  <div class="carousel-caption">
+						<h3>大手印刷通販企業の生産管理システムを構築しました。WEB受注から入金・入稿⇒データチェック⇒手配⇒印刷⇒断裁⇒加工⇒梱包⇒発送まで一連の業務をスムーズに管理できて、生産効率を大きく向上しました。</h3>
+					  </div>
+					</div>
+					<div class="item">
+					  <img data-src="holder.js/100px400?theme=industrial&text=基幹業務システム" alt="大手製薬メーカーの基幹業務システム" />
+					  <div class="carousel-caption">
+						<h3>大手製薬メーカーの社内LAN、個人のPDAで、同時に2000人アクセス可能、データのアップロード・ダウンロード機能、ツリー表示機能、リアル計算機能、グラフィックスでデータの分析機能</h3>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</section>
+			
+			
+			
+			<section class="section">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="row">
+							 <div class="col-md-2 text-center">
+							  <h3 class="blue inline bigger">プラットフォーム</h3>
+							  <div class="space-8 visible-xs visible-sm"></div>
+							 </div>
+							
+							 <div class="col-md-10">
+							  <div class="row">
+
+							  <div class="col-xs-4 col-sm-3 col-md-2 text-center">
+									<i class="fa fa-linux orange fa-3x"></i>
+									<div class="space-4"></div>
+									<span class="bigger-120 text-muted">Linux</span>
+								</div>
+
+							  <div class="col-xs-4 col-sm-3 col-md-2 text-center">
+									<i class="fa fa-windows text-primary fa-3x"></i>
+									<div class="space-4"></div>
+									<span class="bigger-120 text-muted">Windows</span>
+								</div>
+
+								<div class="col-xs-4 col-sm-3 col-md-2 text-center">
+									<i class="fa fa-android green fa-3x"></i>
+									<div class="space-4"></div>
+									<span class="bigger-120 text-muted">Android</span>
+								</div>
+
+								<div class="col-xs-4 col-sm-3 col-md-2 text-center">
+									<i class="fa fa-apple light-blue fa-3x"></i>
+									<div class="space-4"></div>
+									<span class="bigger-120 text-muted">IOS</span>
+								</div>								
+								
+								<div class="col-xs-4 col-sm-3 col-md-2 text-center">
+									<i class="fa fa-amazon orange2 fa-3x"></i>
+									<div class="space-4"></div>
+									<span class="bigger-120 text-muted">AWS</span>
+								</div>	
+
+								<div class="col-xs-4 col-sm-3 col-md-2 text-center">
+									<i class="fa fa-yahoo red fa-3x"></i>
+									<div class="space-4"></div>
+									<span class="bigger-120 text-muted">YahooAPI</span>
+								</div>
+								
+							</div>
+							
+						  </div>
+						 </div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			
+			<section id="contact" class="section section-contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h2 class="white">問合せ</h2>
+							<h4 class="light-grey">お気軽にご相談下さい。</h4>
+						</div>
+					</div>
+					
+					<div class="space-16"></div>
+					
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4 white">
+							<!-- <form>
+								<div class="row">
+									<div class="col-md-5 col-md-offset-2">
+										<div class="form-group">
+											<input type="text" placeholder="お名前" class="form-control input-lg input-transparent" />
+										</div>
+										<div class="form-group">
+											<input type="email" placeholder="メールアドレス" class="form-control input-lg input-transparent" />
+										</div>
+										<div class="form-group">
+											<input type="tel" placeholder="電話番号" class="form-control input-lg input-transparent" />
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="form-group">
+											<textarea placeholder="問合せ内容" class="form-control input-transparent"></textarea>
+										</div>
+									</div>
+									
+									<div class="clearfix"></div>
+									
+									<div class="space-12"></div>
+									
+									<div class="col-md-offset-2 text-center">
+										<button class="btn btn-primary btn-lg no-border" type="button">送信</button>
+									</div>
+								</div>
+							</form> -->
+							<table class="table  table-bordered">
+									<tbody>
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">連絡者</span>
+												</label>
+											</td>
+
+											<td>
+												佐藤　光一
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">Email</span>
+												</label>
+											</td>
+
+											<td>
+												ghg@it-softtech.com
+											</td>
+										</tr>
+
+										<tr>
+											<td class="center">
+												<label class="pos-rel">
+													<span class="lbl">連絡電話</span>
+												</label>
+											</td>
+
+											<td>
+												03-5809-3784
+											</td>
+										</tr>
+									</tbody>
+								</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<footer class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 text-left">
+							<span class="bigger-150 text-muted"><span class="blue bolder">ソフトテク</span> 株式会社 &copy; 2016-2017</span>
+						</div>
+						<div class="col-md-4 text-center">
+							<span class="action-buttons">
+								<a href="#">
+									<i class="ace-icon fa fa-twitter-square light-blue bigger-200"></i>
+								</a>
+								
+								<a href="#">
+									<i class="ace-icon fa fa-facebook-square text-primary bigger-200"></i>
+								</a>
+								
+								<a href="#">
+									<i class="ace-icon fa fa-rss-square orange bigger-200"></i>
+								</a>
+							</span>
+						</div>
+						
+						<div class="col-md-4 text-right">
+							<a href="#" class="bigger-110">上へ戻る</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
 		</div>
 
 
@@ -243,13 +514,60 @@
 		<!--[if IE]>
 		<script src="../assets/js/jquery1x.js"></script>
 		<![endif]-->
-
+		
+		
 		<script src="assets/js/bootstrap.min.js"></script>
-	
+		<script src="assets/js/holder.js"></script>
+		
 		<script type="text/javascript">
 		jQuery(function($) {
-
-			$('#contact-modal textarea').css('min-height', '150px');
+			$('#contact textarea').css('min-height', '150px');
+		
+		
+			///make navbar compact when scrolling down
+			var isCompact = false;
+			$(window)
+			.on('scroll.scroll_nav', function() {
+				var scroll = $(window).scrollTop();
+				var h = $(window).height();
+				var body_sH = document.body.scrollHeight;
+				if(scroll > parseInt(h / 4) || (scroll > 0 && body_sH >= h && h + scroll >= body_sH - 1)) {//|| for smaller pages, when reached end of page
+					if(!isCompact) $('.navbar').addClass('navbar-compact');
+					isCompact = true;
+				}
+				else {
+					$('.navbar').removeClass('navbar-compact');
+					isCompact = false;
+				}
+			}).triggerHandler('scroll.scroll_nav');
+			
+			
+			//optinal: when window is too small change background presentation
+			$(window)
+			.on('resize.bg_update', function() {
+				var width = $(window).width();
+				
+				if(width < 992) {
+					$('.img-main-background').addClass('hide');
+					$('.jumbotron').addClass('has-background');
+				}
+				else {
+					$('.img-main-background').removeClass('hide');
+					$('.jumbotron').removeClass('has-background');
+				}
+			}).triggerHandler('resize.bg_update');
+			
+			
+			//animated scroll to a section
+			$(document).on('click', '#navbar a', function() {
+				var href = $(this).attr('href');
+				var target = $(href);
+				if(target.length == 1) {
+					var offset = target.offset();
+					var top = parseInt(Math.max(offset.top - 30, 0));
+					$('html,body').animate({scrollTop: top}, 250);
+				}
+			});
 
 		});
 		</script>
